@@ -2,27 +2,27 @@
 
 # Form implementation generated from reading ui file 'Manager.ui'
 #
-# Created by: PyQt5 UI code generator 5.11.3
+# Created by: PyQt5 UI code generator 5.10.1
 #
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-class Ui_ManagerW(object):
-    def setupUi(self, ManagerW):
-        ManagerW.setObjectName("ManagerW")
-        ManagerW.resize(430, 199)
-        self.textBrowser = QtWidgets.QTextBrowser(ManagerW)
-        self.textBrowser.setGeometry(QtCore.QRect(20, 10, 391, 31))
+class Ui_Qmanager(object):
+    def setupUi(self, Qmanager):
+        Qmanager.setObjectName("Qmanager")
+        Qmanager.resize(490, 362)
+        self.textBrowser = QtWidgets.QTextBrowser(Qmanager)
+        self.textBrowser.setGeometry(QtCore.QRect(20, 10, 461, 31))
         self.textBrowser.setStyleSheet("background-color: transparent;")
         self.textBrowser.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.textBrowser.setObjectName("textBrowser")
-        self.btnadd_hostel = QtWidgets.QPushButton(ManagerW)
-        self.btnadd_hostel.setGeometry(QtCore.QRect(350, 60, 61, 23))
+        self.btnadd_hostel = QtWidgets.QPushButton(Qmanager)
+        self.btnadd_hostel.setGeometry(QtCore.QRect(400, 60, 81, 23))
         self.btnadd_hostel.setStyleSheet("")
         self.btnadd_hostel.setObjectName("btnadd_hostel")
-        self.hotel_session = QtWidgets.QLabel(ManagerW)
-        self.hotel_session.setGeometry(QtCore.QRect(140, 60, 191, 131))
+        self.hotel_session = QtWidgets.QLabel(Qmanager)
+        self.hotel_session.setGeometry(QtCore.QRect(200, 60, 191, 131))
         self.hotel_session.setMaximumSize(QtCore.QSize(271, 131))
         self.hotel_session.setCursor(QtGui.QCursor(QtCore.Qt.CrossCursor))
         self.hotel_session.setMouseTracking(True)
@@ -30,8 +30,8 @@ class Ui_ManagerW(object):
         self.hotel_session.setFrameShape(QtWidgets.QFrame.Box)
         self.hotel_session.setText("")
         self.hotel_session.setObjectName("hotel_session")
-        self.verticalLayoutWidget_2 = QtWidgets.QWidget(ManagerW)
-        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(10, 60, 134, 131))
+        self.verticalLayoutWidget_2 = QtWidgets.QWidget(Qmanager)
+        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(10, 60, 185, 131))
         self.verticalLayoutWidget_2.setObjectName("verticalLayoutWidget_2")
         self.sorts = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_2)
         self.sorts.setContentsMargins(0, 0, 0, 0)
@@ -48,50 +48,74 @@ class Ui_ManagerW(object):
         self.id.setChecked(False)
         self.id.setObjectName("id")
         self.sorts.addWidget(self.id)
-        self.textBrowser_2 = QtWidgets.QTextBrowser(ManagerW)
+        self.textBrowser_2 = QtWidgets.QTextBrowser(Qmanager)
         self.textBrowser_2.setGeometry(QtCore.QRect(10, 40, 131, 21))
         self.textBrowser_2.setStyleSheet("background-color: transparent;")
         self.textBrowser_2.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.textBrowser_2.setObjectName("textBrowser_2")
-        self.textBrowser_3 = QtWidgets.QTextBrowser(ManagerW)
-        self.textBrowser_3.setGeometry(QtCore.QRect(140, 40, 191, 21))
+        self.textBrowser_3 = QtWidgets.QTextBrowser(Qmanager)
+        self.textBrowser_3.setGeometry(QtCore.QRect(200, 40, 191, 21))
         self.textBrowser_3.setStyleSheet("background-color: transparent;")
         self.textBrowser_3.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.textBrowser_3.setObjectName("textBrowser_3")
+        self.admin_session = QtWidgets.QLabel(Qmanager)
+        self.admin_session.setGeometry(QtCore.QRect(200, 220, 191, 131))
+        self.admin_session.setMaximumSize(QtCore.QSize(271, 131))
+        self.admin_session.setCursor(QtGui.QCursor(QtCore.Qt.CrossCursor))
+        self.admin_session.setMouseTracking(True)
+        self.admin_session.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.admin_session.setFrameShape(QtWidgets.QFrame.Box)
+        self.admin_session.setText("")
+        self.admin_session.setObjectName("admin_session")
+        self.btnadd_admin = QtWidgets.QPushButton(Qmanager)
+        self.btnadd_admin.setGeometry(QtCore.QRect(400, 220, 81, 23))
+        self.btnadd_admin.setStyleSheet("")
+        self.btnadd_admin.setObjectName("btnadd_admin")
+        self.textBrowser_4 = QtWidgets.QTextBrowser(Qmanager)
+        self.textBrowser_4.setGeometry(QtCore.QRect(200, 200, 191, 21))
+        self.textBrowser_4.setStyleSheet("background-color: transparent;")
+        self.textBrowser_4.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.textBrowser_4.setObjectName("textBrowser_4")
 
-        self.retranslateUi(ManagerW)
-        QtCore.QMetaObject.connectSlotsByName(ManagerW)
+        self.retranslateUi(Qmanager)
+        QtCore.QMetaObject.connectSlotsByName(Qmanager)
 
-    def retranslateUi(self, ManagerW):
+    def retranslateUi(self, Qmanager):
         _translate = QtCore.QCoreApplication.translate
-        ManagerW.setWindowTitle(_translate("ManagerW", "Form"))
-        self.textBrowser.setHtml(_translate("ManagerW", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        Qmanager.setWindowTitle(_translate("Qmanager", "Form"))
+        self.textBrowser.setHtml(_translate("Qmanager", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Управляющий </p></body></html>"))
-        self.btnadd_hostel.setText(_translate("ManagerW", "Добавить"))
-        self.adress_sort.setText(_translate("ManagerW", "адресу"))
-        self.nroom_sort.setText(_translate("ManagerW", "колличеству комнат"))
-        self.id.setText(_translate("ManagerW", "времени регистрации"))
-        self.textBrowser_2.setHtml(_translate("ManagerW", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"</style></head><body style=\" font-family:\'Ubuntu\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:8pt;\">Управляющий </span></p></body></html>"))
+        self.btnadd_hostel.setText(_translate("Qmanager", "Добавить"))
+        self.adress_sort.setText(_translate("Qmanager", "адресу"))
+        self.nroom_sort.setText(_translate("Qmanager", "колличеству комнат"))
+        self.id.setText(_translate("Qmanager", "времени регистрации"))
+        self.textBrowser_2.setHtml(_translate("Qmanager", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Сортировать по:</p></body></html>"))
-        self.textBrowser_3.setHtml(_translate("ManagerW", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"</style></head><body style=\" font-family:\'Ubuntu\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:8pt;\">Сортировать по:</span></p></body></html>"))
+        self.textBrowser_3.setHtml(_translate("Qmanager", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Список гостиниц</p></body></html>"))
+"</style></head><body style=\" font-family:\'Ubuntu\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:8pt;\">Список гостиниц</span></p></body></html>"))
+        self.btnadd_admin.setText(_translate("Qmanager", "Добавить"))
+        self.textBrowser_4.setHtml(_translate("Qmanager", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Ubuntu\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:8pt;\">Список администраторов</span></p></body></html>"))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    ManagerW = QtWidgets.QWidget()
-    ui = Ui_ManagerW()
-    ui.setupUi(ManagerW)
-    ManagerW.show()
+    Qmanager = QtWidgets.QWidget()
+    ui = Ui_Qmanager()
+    ui.setupUi(Qmanager)
+    Qmanager.show()
     sys.exit(app.exec_())
 
