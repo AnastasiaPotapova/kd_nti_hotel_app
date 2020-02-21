@@ -11,12 +11,12 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Qadd_lodger(object):
     def setupUi(self, Qadd_lodger):
         Qadd_lodger.setObjectName("Qadd_lodger")
-        Qadd_lodger.resize(527, 284)
-        self.textBrowser = QtWidgets.QTextBrowser(Qadd_lodger)
-        self.textBrowser.setGeometry(QtCore.QRect(10, 10, 511, 31))
-        self.textBrowser.setStyleSheet("background-color: transparent;")
-        self.textBrowser.setFrameShape(QtWidgets.QFrame.NoFrame)
-        self.textBrowser.setObjectName("textBrowser")
+        Qadd_lodger.resize(391, 283)
+        self.title = QtWidgets.QTextBrowser(Qadd_lodger)
+        self.title.setGeometry(QtCore.QRect(10, 10, 511, 31))
+        self.title.setStyleSheet("background-color: transparent;")
+        self.title.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.title.setObjectName("title")
         self.familyname = QtWidgets.QLineEdit(Qadd_lodger)
         self.familyname.setGeometry(QtCore.QRect(130, 50, 131, 20))
         self.familyname.setStyleSheet("background-color: rgb(255, 255, 255);")
@@ -67,23 +67,14 @@ class Ui_Qadd_lodger(object):
         self.passport.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.passport.setObjectName("passport")
         self.btnadd_hostel = QtWidgets.QPushButton(Qadd_lodger)
-        self.btnadd_hostel.setGeometry(QtCore.QRect(440, 250, 81, 23))
+        self.btnadd_hostel.setGeometry(QtCore.QRect(270, 240, 111, 31))
         self.btnadd_hostel.setStyleSheet("")
         self.btnadd_hostel.setObjectName("btnadd_hostel")
-        self.name_cinema_wr_8 = QtWidgets.QLabel(Qadd_lodger)
-        self.name_cinema_wr_8.setGeometry(QtCore.QRect(270, 80, 111, 21))
-        self.name_cinema_wr_8.setObjectName("name_cinema_wr_8")
-        self.emp = QtWidgets.QComboBox(Qadd_lodger)
-        self.emp.setGeometry(QtCore.QRect(390, 80, 131, 31))
-        self.emp.setStyleSheet("background-color: rgb(255, 255, 255);")
-        self.emp.setObjectName("emp")
-        self.name_cinema_wr_9 = QtWidgets.QLabel(Qadd_lodger)
-        self.name_cinema_wr_9.setGeometry(QtCore.QRect(270, 50, 111, 21))
-        self.name_cinema_wr_9.setObjectName("name_cinema_wr_9")
-        self.check_in = QtWidgets.QLineEdit(Qadd_lodger)
-        self.check_in.setGeometry(QtCore.QRect(390, 50, 131, 20))
-        self.check_in.setStyleSheet("background-color: rgb(255, 255, 255);")
-        self.check_in.setObjectName("check_in")
+        self.status = QtWidgets.QTextBrowser(Qadd_lodger)
+        self.status.setGeometry(QtCore.QRect(280, 50, 101, 181))
+        self.status.setStyleSheet("background-color: transparent;")
+        self.status.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.status.setObjectName("status")
 
         self.retranslateUi(Qadd_lodger)
         QtCore.QMetaObject.connectSlotsByName(Qadd_lodger)
@@ -91,11 +82,11 @@ class Ui_Qadd_lodger(object):
     def retranslateUi(self, Qadd_lodger):
         _translate = QtCore.QCoreApplication.translate
         Qadd_lodger.setWindowTitle(_translate("Qadd_lodger", "Form"))
-        self.textBrowser.setHtml(_translate("Qadd_lodger", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        self.title.setHtml(_translate("Qadd_lodger", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Ubuntu\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:8pt;\">Заселение постояльца</span></p></body></html>"))
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
         self.name_cinema_wr.setText(_translate("Qadd_lodger", "Фамилия"))
         self.name_cinema_wr_2.setText(_translate("Qadd_lodger", "Имя"))
         self.name_cinema_wr_4.setText(_translate("Qadd_lodger", "Дата рождения"))
@@ -103,9 +94,12 @@ class Ui_Qadd_lodger(object):
         self.name_cinema_wr_6.setText(_translate("Qadd_lodger", "Номер телефона"))
         self.name_cinema_wr_3.setText(_translate("Qadd_lodger", "Отчество"))
         self.name_cinema_wr_7.setText(_translate("Qadd_lodger", "Пасспортные данные"))
-        self.btnadd_hostel.setText(_translate("Qadd_lodger", "Заселить"))
-        self.name_cinema_wr_8.setText(_translate("Qadd_lodger", "Свободные номера"))
-        self.name_cinema_wr_9.setText(_translate("Qadd_lodger", "Дата заселения"))
+        self.btnadd_hostel.setText(_translate("Qadd_lodger", "Добавление"))
+        self.status.setHtml(_translate("Qadd_lodger", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Ubuntu\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
 
 
 if __name__ == "__main__":

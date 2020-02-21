@@ -70,6 +70,11 @@ class Ui_Qadd_admin(object):
         self.password.setGeometry(QtCore.QRect(350, 80, 131, 20))
         self.password.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.password.setObjectName("password")
+        self.status = QtWidgets.QTextBrowser(Qadd_admin)
+        self.status.setGeometry(QtCore.QRect(290, 140, 181, 31))
+        self.status.setStyleSheet("background-color: transparent;")
+        self.status.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.status.setObjectName("status")
 
         self.retranslateUi(Qadd_admin)
         QtCore.QMetaObject.connectSlotsByName(Qadd_admin)
@@ -90,6 +95,11 @@ class Ui_Qadd_admin(object):
         self.name_cinema_wr_5.setText(_translate("Qadd_admin", "Гостиница"))
         self.name_cinema_wr_6.setText(_translate("Qadd_admin", "Номер телефона"))
         self.btnadd_hostel.setText(_translate("Qadd_admin", "Заселить"))
+        self.status.setHtml(_translate("Qadd_admin", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Ubuntu\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
 
 
 if __name__ == "__main__":

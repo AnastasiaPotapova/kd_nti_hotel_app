@@ -11,18 +11,18 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Qadmin(object):
     def setupUi(self, Qadmin):
         Qadmin.setObjectName("Qadmin")
-        Qadmin.resize(587, 209)
+        Qadmin.resize(587, 241)
         self.textBrowser = QtWidgets.QTextBrowser(Qadmin)
         self.textBrowser.setGeometry(QtCore.QRect(10, 10, 571, 31))
         self.textBrowser.setStyleSheet("background-color: transparent;")
         self.textBrowser.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.textBrowser.setObjectName("textBrowser")
         self.btnin_lodger = QtWidgets.QPushButton(Qadmin)
-        self.btnin_lodger.setGeometry(QtCore.QRect(210, 60, 81, 23))
+        self.btnin_lodger.setGeometry(QtCore.QRect(210, 110, 81, 23))
         self.btnin_lodger.setStyleSheet("")
         self.btnin_lodger.setObjectName("btnin_lodger")
         self.textBrowser_3 = QtWidgets.QTextBrowser(Qadmin)
-        self.textBrowser_3.setGeometry(QtCore.QRect(10, 40, 191, 21))
+        self.textBrowser_3.setGeometry(QtCore.QRect(10, 30, 191, 31))
         self.textBrowser_3.setStyleSheet("background-color: transparent;")
         self.textBrowser_3.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.textBrowser_3.setObjectName("textBrowser_3")
@@ -34,19 +34,16 @@ class Ui_Qadmin(object):
         self.lodger_session.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.lodger_session.setFrameShape(QtWidgets.QFrame.Box)
         self.lodger_session.setText("")
+        self.lodger_session.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
         self.lodger_session.setObjectName("lodger_session")
         self.btnout_lodger = QtWidgets.QPushButton(Qadmin)
-        self.btnout_lodger.setGeometry(QtCore.QRect(210, 90, 81, 23))
+        self.btnout_lodger.setGeometry(QtCore.QRect(210, 140, 81, 23))
         self.btnout_lodger.setStyleSheet("")
         self.btnout_lodger.setObjectName("btnout_lodger")
         self.btnadd_lodger = QtWidgets.QPushButton(Qadmin)
-        self.btnadd_lodger.setGeometry(QtCore.QRect(210, 140, 81, 23))
+        self.btnadd_lodger.setGeometry(QtCore.QRect(210, 170, 81, 23))
         self.btnadd_lodger.setStyleSheet("")
         self.btnadd_lodger.setObjectName("btnadd_lodger")
-        self.btndelete_lodger = QtWidgets.QPushButton(Qadmin)
-        self.btndelete_lodger.setGeometry(QtCore.QRect(210, 170, 81, 23))
-        self.btndelete_lodger.setStyleSheet("")
-        self.btndelete_lodger.setObjectName("btndelete_lodger")
         self.room_session = QtWidgets.QLabel(Qadmin)
         self.room_session.setGeometry(QtCore.QRect(300, 60, 191, 131))
         self.room_session.setMaximumSize(QtCore.QSize(271, 131))
@@ -55,9 +52,10 @@ class Ui_Qadmin(object):
         self.room_session.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.room_session.setFrameShape(QtWidgets.QFrame.Box)
         self.room_session.setText("")
+        self.room_session.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
         self.room_session.setObjectName("room_session")
         self.textBrowser_4 = QtWidgets.QTextBrowser(Qadmin)
-        self.textBrowser_4.setGeometry(QtCore.QRect(300, 40, 191, 21))
+        self.textBrowser_4.setGeometry(QtCore.QRect(300, 30, 191, 31))
         self.textBrowser_4.setStyleSheet("background-color: transparent;")
         self.textBrowser_4.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.textBrowser_4.setObjectName("textBrowser_4")
@@ -65,10 +63,15 @@ class Ui_Qadmin(object):
         self.btnadd_room.setGeometry(QtCore.QRect(500, 170, 81, 23))
         self.btnadd_room.setStyleSheet("")
         self.btnadd_room.setObjectName("btnadd_room")
-        self.btn_checkin = QtWidgets.QPushButton(Qadmin)
-        self.btn_checkin.setGeometry(QtCore.QRect(500, 60, 81, 23))
-        self.btn_checkin.setStyleSheet("")
-        self.btn_checkin.setObjectName("btn_checkin")
+        self.status = QtWidgets.QTextBrowser(Qadmin)
+        self.status.setGeometry(QtCore.QRect(20, 200, 461, 41))
+        self.status.setStyleSheet("background-color: transparent;")
+        self.status.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.status.setObjectName("status")
+        self.btnto_csv = QtWidgets.QPushButton(Qadmin)
+        self.btnto_csv.setGeometry(QtCore.QRect(490, 200, 91, 31))
+        self.btnto_csv.setStyleSheet("")
+        self.btnto_csv.setObjectName("btnto_csv")
 
         self.retranslateUi(Qadmin)
         QtCore.QMetaObject.connectSlotsByName(Qadmin)
@@ -89,14 +92,18 @@ class Ui_Qadmin(object):
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:8pt;\">Список постояльцев</span></p></body></html>"))
         self.btnout_lodger.setText(_translate("Qadmin", "Выселить"))
         self.btnadd_lodger.setText(_translate("Qadmin", "Добавить"))
-        self.btndelete_lodger.setText(_translate("Qadmin", "Удалить"))
         self.textBrowser_4.setHtml(_translate("Qadmin", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Ubuntu\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:8pt;\">Список свободных номеров</span></p></body></html>"))
         self.btnadd_room.setText(_translate("Qadmin", "Добавить"))
-        self.btn_checkin.setText(_translate("Qadmin", "ок"))
+        self.status.setHtml(_translate("Qadmin", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Ubuntu\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+        self.btnto_csv.setText(_translate("Qadmin", "Выгрузить"))
 
 
 if __name__ == "__main__":
